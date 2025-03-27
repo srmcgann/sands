@@ -70,8 +70,6 @@
       ]
       var videoShader = await Coordinates.BasicShader(renderer, shaderOptions)
       
-      console.log(videoShader)
-
 
       var shapes = []
 
@@ -92,7 +90,7 @@
       
       var url = 'https://i.imgur.com/gFNPd1m.mp4'
       var l
-      if((l=location.href.toLowerCase().split('url=')).length>1){
+      if((l=location.href.split('url=')).length>1){
         url = l[1].split('&')[0]
       }
       
