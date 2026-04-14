@@ -264,6 +264,7 @@
       
       //renderer.yaw += -.05
       window.Draw = () => {
+        renderer.Clear()
         if(ready){
 
           if(assetType == 'video') drawToScratchCanvas()
